@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 2rem;
+}
+
+@media (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+    main {
+        margin: 20px 10px;
+    }
+  }
+
+img {
+  max-width: 100%;
+}
+
+main .sedans-card {
+  background-color: hsl(31, 77%, 52%);
+  padding: 40px;
+}
+
+main .main-text h1 {
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-size: 35px;
+  padding: 20px 0;
+  font-weight: 700;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+main .main-text p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 0 20px;
+}
+
+main .sedans-card .main-text button {
+  all: unset;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 100px;
+  text-align: center;
+  margin-top: 50px;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition: 0.3s;
+}
+
+main .sedans-card .main-text button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+main .suvs-card {
+  background-color: hsl(184, 100%, 22%);
+  padding: 40px;
+}
+
+main .suvs-card .main-text button {
+  all: unset;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 100px;
+  text-align: center;
+  margin-top: 50px;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition: 0.3s;
+}
+
+main .suvs-card .main-text button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+main .luxury-card {
+  background-color: hsl(179, 100%, 13%);
+  padding: 40px;
+}
+
+main .luxury-card .main-text button {
+  all: unset;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 100px;
+  text-align: center;
+  margin-top: 50px;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition: 0.3s;
+}
+
+main .luxury-card .main-text button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+footer {
+    font-size: 10px;
+}
+
+footer a {
+    text-transform: uppercase;
+}
